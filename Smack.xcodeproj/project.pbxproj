@@ -18,6 +18,7 @@
 		7FE692AA20DCBE6E002B8133 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE692A920DCBE6E002B8133 /* GradientView.swift */; };
 		7FE692AD20DCDD0A002B8133 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE692AC20DCDD0A002B8133 /* Constants.swift */; };
 		7FE692AF20DCE6D7002B8133 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE692AE20DCE6D7002B8133 /* LoginVC.swift */; };
+		7FE692B120DD310C002B8133 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE692B020DD310C002B8133 /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		7FE692A920DCBE6E002B8133 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		7FE692AC20DCDD0A002B8133 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7FE692AE20DCE6D7002B8133 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		7FE692B020DD310C002B8133 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		FC5829C2BFB52DD1DCD7DF73 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 				7FE692A520DCB36B002B8133 /* ChatVC.swift */,
 				7FE692A720DCB38D002B8133 /* ChannelVC.swift */,
 				7FE692AE20DCE6D7002B8133 /* LoginVC.swift */,
+				7FE692B020DD310C002B8133 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				7FE692A820DCB38D002B8133 /* ChannelVC.swift in Sources */,
 				7FE692A620DCB36B002B8133 /* ChatVC.swift in Sources */,
+				7FE692B120DD310C002B8133 /* CreateAccountVC.swift in Sources */,
 				7FE692AF20DCE6D7002B8133 /* LoginVC.swift in Sources */,
 				7FE692AA20DCBE6E002B8133 /* GradientView.swift in Sources */,
 				7FE6928C20DBE142002B8133 /* AppDelegate.swift in Sources */,
