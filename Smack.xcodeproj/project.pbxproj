@@ -20,6 +20,7 @@
 		7FE692AF20DCE6D7002B8133 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE692AE20DCE6D7002B8133 /* LoginVC.swift */; };
 		7FE692B120DD310C002B8133 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE692B020DD310C002B8133 /* CreateAccountVC.swift */; };
 		7FE692B420E09F3F002B8133 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE692B320E09F3F002B8133 /* AuthService.swift */; };
+		7FE692B620E0BF42002B8133 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE692B520E0BF42002B8133 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		7FE692AE20DCE6D7002B8133 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7FE692B020DD310C002B8133 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		7FE692B320E09F3F002B8133 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		7FE692B520E0BF42002B8133 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		FC5829C2BFB52DD1DCD7DF73 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				7FE692A920DCBE6E002B8133 /* GradientView.swift */,
+				7FE692B520E0BF42002B8133 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FE692A820DCB38D002B8133 /* ChannelVC.swift in Sources */,
+				7FE692B620E0BF42002B8133 /* RoundedButton.swift in Sources */,
 				7FE692A620DCB36B002B8133 /* ChatVC.swift in Sources */,
 				7FE692B120DD310C002B8133 /* CreateAccountVC.swift in Sources */,
 				7FE692B420E09F3F002B8133 /* AuthService.swift in Sources */,
