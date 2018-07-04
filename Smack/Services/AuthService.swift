@@ -11,6 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 class AuthService {
+    
     static let instance = AuthService()
     
     let defaults = UserDefaults.standard
@@ -79,6 +80,8 @@ class AuthService {
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (response) in
             
             if response.result.error == nil {
+                
+                
 //                if let json = response.result.value as? Dictionary<String, Any> {
 //                    if let email = json["user"] as? String {
 //                        self.userEmail = email
@@ -87,6 +90,10 @@ class AuthService {
 //                        self.authToken = token
 //                    }
 //                }
+                
+                
+                
+                
                 
                 //Using SwiftyJSON
                 guard let data = response.data else {return}
@@ -121,7 +128,7 @@ class AuthService {
                     guard let data = response.data else { return }
                     self.setUserInfo(data: data)
                     completion(true)
-                    
+
                 } else {
                     completion(false)
                     debugPrint(response.result.error as Any)
@@ -129,39 +136,53 @@ class AuthService {
             }
         }
     
+//
+//            Alamofire.request(URL_USER_ADD, method: .post, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER)
+//                .validate()
+//                .responseString { response in
+//                    print("Success: \(response.result.isSuccess)")
+//                    print("Response String: \(response.result.value)")
+//                    completion(true)
+//            }
+//
+    
+    
+    
     func findUserByEmail(completion: @escaping CompletionHandler) {
-        
+
         Alamofire.request("\(URL_USER_BY_EMAIL)\(userEmail)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
             if response.result.error == nil {
                 guard let data = response.data else { return }
-                self.setUserInfo(data: data)
                 completion(true)
-                
+
             } else {
                 completion(false)
                 debugPrint(response.result.error as Any)
             }
-            
+
         }
-        
+
     }
-      
+    
+            
+            
     func setUserInfo(data: Data) {
-        
+
         let json = try! JSON(data: data)
         let id = json["_id"].stringValue
         let color = json["avatarColor"].stringValue
         let avatarName = json["avatarName"].stringValue
         let email = json["email"].stringValue
         let name = json["name"].stringValue
-        
+
         UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
     }
-    
-    
+
     }
     
-    
+//    }
+
+
     
     
     
